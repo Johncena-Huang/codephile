@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 module.exports = {
+  pathPrefix: "/codephile",
   siteMetadata: {
     title: `Wei-Ren, Huang`,
     description: `This is John's personal webite. I am a frontend web developer, currently based in Taipei Taiwan.`,
