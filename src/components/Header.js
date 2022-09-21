@@ -4,6 +4,7 @@ import Container from "@mui/material/Container"
 import Toolbar from "@mui/material/Toolbar"
 import Avatar from "@mui/material/Avatar"
 import Link from "@mui/material/Link"
+import { withPrefix } from "gatsby"
 const navigationLinks = [
   { tag: "Home", url: "/#" },
   { tag: "Contact", url: "/#contact" },
@@ -25,7 +26,7 @@ export default function Header() {
                 key={index}
                 underline="none"
                 color="inherit"
-                href={url}
+                href={withPrefix(url)}
                 sx={{ mx: 2, color: theme => theme.palette.text.secondary }}
               >
                 {tag}
@@ -34,7 +35,7 @@ export default function Header() {
             <Link
               aria-label="resume"
               underline="none"
-              href="/resume.pdf"
+              href={withPrefix(`/resume.pdf`)}
               color="secondary"
               sx={{ mx: 2 }}
             >
